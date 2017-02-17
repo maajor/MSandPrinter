@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C5F80730-F44F-4478-BDAE-6634EFC2CA88}</ProjectGuid>
+    <RootNamespace>$safeprojectname$</RootNamespace>
+    <ProjectName>Marlin</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;C:\Users\Maajor\Documents\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\mega;D:\GraduateYear2\Thesis\3 Machine\MSandPrinter\Marlin\Marlin;C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\mega;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\2smeseqj.l0e\Micro Platforms\default\debuggers\VM_DBG;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\2smeseqj.l0e\Micro Platforms\default\debuggers;C:\Users\Maajor\Documents\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\tools\avr/avr/include/;C:\Program Files (x86)\Arduino\hardware\tools\avr//avr/include/avr/;C:\Program Files (x86)\Arduino\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\GraduateYear2\Thesis\3 Machine\MSandPrinter\Marlin\__vm\.Marlin.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega2560__;_VMDEBUG=1;F_CPU=16000000L;ARDUINO=10800;ARDUINO_AVR_MEGA2560;ARDUINO_ARCH_AVR;__cplusplus=201103L;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;C:\Users\Maajor\Documents\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\mega;D:\GraduateYear2\Thesis\3 Machine\MSandPrinter\Marlin;C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\mega;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\2smeseqj.l0e\Micro Platforms\default\debuggers;C:\Users\Maajor\Documents\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\tools\avr/avr/include/;C:\Program Files (x86)\Arduino\hardware\tools\avr//avr/include/avr/;C:\Program Files (x86)\Arduino\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\GraduateYear2\Thesis\3 Machine\MSandPrinter\Marlin\__vm\.Marlin.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>__AVR_ATmega2560__;F_CPU=16000000L;ARDUINO=10800;ARDUINO_AVR_MEGA2560;ARDUINO_ARCH_AVR;__cplusplus=201103L;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="VisualMicro" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Marlin.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="blinkm.h" />
+    <ClInclude Include="boards.h" />
+    <ClInclude Include="buzzer.h" />
+    <ClInclude Include="cardreader.h" />
+    <ClInclude Include="circularqueue.h" />
+    <ClInclude Include="Conditionals.h" />
+    <ClInclude Include="Conditionals_LCD.h" />
+    <ClInclude Include="Conditionals_post.h" />
+    <ClInclude Include="Configuration.h" />
+    <ClInclude Include="Configuration_adv.h" />
+    <ClInclude Include="configuration_store.h" />
+    <ClInclude Include="dac_mcp4728.h" />
+    <ClInclude Include="dogm_bitmaps.h" />
+    <ClInclude Include="dogm_font_data_6x9_marlin.h" />
+    <ClInclude Include="dogm_font_data_HD44780_C.h" />
+    <ClInclude Include="dogm_font_data_HD44780_J.h" />
+    <ClInclude Include="dogm_font_data_HD44780_W.h" />
+    <ClInclude Include="dogm_font_data_ISO10646_1.h" />
+    <ClInclude Include="dogm_font_data_ISO10646_1_tr.h" />
+    <ClInclude Include="dogm_font_data_ISO10646_5_Cyrillic.h" />
+    <ClInclude Include="dogm_font_data_ISO10646_CN.h" />
+    <ClInclude Include="dogm_font_data_ISO10646_Greek.h" />
+    <ClInclude Include="dogm_font_data_ISO10646_Kana.h" />
+    <ClInclude Include="dogm_font_data_Marlin_symbols.h" />
+    <ClInclude Include="duration_t.h" />
+    <ClInclude Include="endstops.h" />
+    <ClInclude Include="endstop_interrupts.h" />
+    <ClInclude Include="enum.h" />
+    <ClInclude Include="fastio.h" />
+    <ClInclude Include="language.h" />
+    <ClInclude Include="language_an.h" />
+    <ClInclude Include="language_bg.h" />
+    <ClInclude Include="language_ca.h" />
+    <ClInclude Include="language_cn.h" />
+    <ClInclude Include="language_cz.h" />
+    <ClInclude Include="language_da.h" />
+    <ClInclude Include="language_de.h" />
+    <ClInclude Include="language_el-gr.h" />
+    <ClInclude Include="language_el.h" />
+    <ClInclude Include="language_en.h" />
+    <ClInclude Include="language_es.h" />
+    <ClInclude Include="language_eu.h" />
+    <ClInclude Include="language_fi.h" />
+    <ClInclude Include="language_fr.h" />
+    <ClInclude Include="language_gl.h" />
+    <ClInclude Include="language_hr.h" />
+    <ClInclude Include="language_it.h" />
+    <ClInclude Include="language_kana.h" />
+    <ClInclude Include="language_kana_utf8.h" />
+    <ClInclude Include="language_nl.h" />
+    <ClInclude Include="language_pl.h" />
+    <ClInclude Include="language_pt-br.h" />
+    <ClInclude Include="language_pt-br_utf8.h" />
+    <ClInclude Include="language_pt.h" />
+    <ClInclude Include="language_pt_utf8.h" />
+    <ClInclude Include="language_ru.h" />
+    <ClInclude Include="language_test.h" />
+    <ClInclude Include="language_tr.h" />
+    <ClInclude Include="language_tr_utf8.h" />
+    <ClInclude Include="language_uk.h" />
+    <ClInclude Include="macros.h" />
+    <ClInclude Include="Marlin.h" />
+    <ClInclude Include="MarlinConfig.h" />
+    <ClInclude Include="MarlinSerial.h" />
+    <ClInclude Include="mesh_bed_leveling.h" />
+    <ClInclude Include="nozzle.h" />
+    <ClInclude Include="pins.h" />
+    <ClInclude Include="pinsDebug.h" />
+    <ClInclude Include="pins_3DRAG.h" />
+    <ClInclude Include="pins_5DPRINT.h" />
+    <ClInclude Include="pins_A4JP.h" />
+    <ClInclude Include="pins_AZTEEG_X1.h" />
+    <ClInclude Include="pins_AZTEEG_X3.h" />
+    <ClInclude Include="pins_AZTEEG_X3_PRO.h" />
+    <ClInclude Include="pins_BAM_DICE_DUE.h" />
+    <ClInclude Include="pins_BQ_ZUM_MEGA_3D.h" />
+    <ClInclude Include="pins_BRAINWAVE.h" />
+    <ClInclude Include="pins_BRAINWAVE_PRO.h" />
+    <ClInclude Include="pins_CHEAPTRONIC.h" />
+    <ClInclude Include="pins_CNCONTROLS_11.h" />
+    <ClInclude Include="pins_CNCONTROLS_12.h" />
+    <ClInclude Include="pins_ELEFU_3.h" />
+    <ClInclude Include="pins_FELIX2.h" />
+    <ClInclude Include="pins_GEN3_MONOLITHIC.h" />
+    <ClInclude Include="pins_GEN3_PLUS.h" />
+    <ClInclude Include="pins_GEN6.h" />
+    <ClInclude Include="pins_GEN6_DELUXE.h" />
+    <ClInclude Include="pins_GEN7_12.h" />
+    <ClInclude Include="pins_GEN7_13.h" />
+    <ClInclude Include="pins_GEN7_14.h" />
+    <ClInclude Include="pins_GEN7_CUSTOM.h" />
+    <ClInclude Include="pins_K8200.h" />
+    <ClInclude Include="pins_K8400.h" />
+    <ClInclude Include="pins_LEAPFROG.h" />
+    <ClInclude Include="pins_MEGACONTROLLER.h" />
+    <ClInclude Include="pins_MEGATRONICS.h" />
+    <ClInclude Include="pins_MEGATRONICS_2.h" />
+    <ClInclude Include="pins_MEGATRONICS_3.h" />
+    <ClInclude Include="pins_MELZI.h" />
+    <ClInclude Include="pins_MELZI_MAKR3D.h" />
+    <ClInclude Include="pins_MIGHTYBOARD_REVE.h" />
+    <ClInclude Include="pins_MINIRAMBO.h" />
+    <ClInclude Include="pins_MINITRONICS.h" />
+    <ClInclude Include="pins_MKS_13.h" />
+    <ClInclude Include="pins_MKS_BASE.h" />
+    <ClInclude Include="pins_OMCA.h" />
+    <ClInclude Include="pins_OMCA_A.h" />
+    <ClInclude Include="pins_PRINTRBOARD.h" />
+    <ClInclude Include="pins_PRINTRBOARD_REVF.h" />
+    <ClInclude Include="pins_RAMBO.h" />
+    <ClInclude Include="pins_RAMPS.h" />
+    <ClInclude Include="pins_RAMPS_13.h" />
+    <ClInclude Include="pins_RAMPS_OLD.h" />
+    <ClInclude Include="pins_RIGIDBOARD.h" />
+    <ClInclude Include="pins_RIGIDBOARD_V2.h" />
+    <ClInclude Include="pins_RUMBA.h" />
+    <ClInclude Include="pins_SAINSMART_2IN1.h" />
+    <ClInclude Include="pins_SANGUINOLOLU_11.h" />
+    <ClInclude Include="pins_SANGUINOLOLU_12.h" />
+    <ClInclude Include="pins_SAV_MKI.h" />
+    <ClInclude Include="pins_SETHI.h" />
+    <ClInclude Include="pins_STB_11.h" />
+    <ClInclude Include="pins_TEENSY2.h" />
+    <ClInclude Include="pins_TEENSYLU.h" />
+    <ClInclude Include="pins_ULTIMAIN_2.h" />
+    <ClInclude Include="pins_ULTIMAKER.h" />
+    <ClInclude Include="pins_ULTIMAKER_OLD.h" />
+    <ClInclude Include="planner.h" />
+    <ClInclude Include="planner_bezier.h" />
+    <ClInclude Include="point_t.h" />
+    <ClInclude Include="printcounter.h" />
+    <ClInclude Include="qr_solve.h" />
+    <ClInclude Include="SanityCheck.h" />
+    <ClInclude Include="Sd2Card.h" />
+    <ClInclude Include="SdBaseFile.h" />
+    <ClInclude Include="SdFatConfig.h" />
+    <ClInclude Include="SdFatStructs.h" />
+    <ClInclude Include="SdFatUtil.h" />
+    <ClInclude Include="SdFile.h" />
+    <ClInclude Include="SdInfo.h" />
+    <ClInclude Include="SdVolume.h" />
+    <ClInclude Include="servo.h" />
+    <ClInclude Include="speed_lookuptable.h" />
+    <ClInclude Include="stepper.h" />
+    <ClInclude Include="stepper_dac.h" />
+    <ClInclude Include="stepper_indirection.h" />
+    <ClInclude Include="stopwatch.h" />
+    <ClInclude Include="temperature.h" />
+    <ClInclude Include="thermistornames.h" />
+    <ClInclude Include="thermistortables.h" />
+    <ClInclude Include="twibus.h" />
+    <ClInclude Include="types.h" />
+    <ClInclude Include="ultralcd.h" />
+    <ClInclude Include="ultralcd_impl_DOGM.h" />
+    <ClInclude Include="ultralcd_impl_HD44780.h" />
+    <ClInclude Include="ultralcd_st7920_u8glib_rrd.h" />
+    <ClInclude Include="utf_mapper.h" />
+    <ClInclude Include="utility.h" />
+    <ClInclude Include="vector_3.h" />
+    <ClInclude Include="Version.h" />
+    <ClInclude Include="watchdog.h" />
+    <ClInclude Include="__vm\.Marlin.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="blinkm.cpp" />
+    <ClCompile Include="cardreader.cpp" />
+    <ClCompile Include="configuration_store.cpp" />
+    <ClCompile Include="dac_mcp4728.cpp" />
+    <ClCompile Include="digipot_mcp4451.cpp" />
+    <ClCompile Include="endstops.cpp" />
+    <ClCompile Include="M100_Free_Mem_Chk.cpp" />
+    <ClCompile Include="MarlinSerial.cpp" />
+    <ClCompile Include="Marlin_main.cpp" />
+    <ClCompile Include="mesh_bed_leveling.cpp" />
+    <ClCompile Include="planner.cpp" />
+    <ClCompile Include="planner_bezier.cpp" />
+    <ClCompile Include="printcounter.cpp" />
+    <ClCompile Include="qr_solve.cpp" />
+    <ClCompile Include="Sd2Card.cpp" />
+    <ClCompile Include="SdBaseFile.cpp" />
+    <ClCompile Include="SdFatUtil.cpp" />
+    <ClCompile Include="SdFile.cpp" />
+    <ClCompile Include="SdVolume.cpp" />
+    <ClCompile Include="servo.cpp" />
+    <ClCompile Include="stepper.cpp" />
+    <ClCompile Include="stepper_dac.cpp" />
+    <ClCompile Include="stepper_indirection.cpp" />
+    <ClCompile Include="stopwatch.cpp" />
+    <ClCompile Include="temperature.cpp" />
+    <ClCompile Include="twibus.cpp" />
+    <ClCompile Include="ultralcd.cpp" />
+    <ClCompile Include="utility.cpp" />
+    <ClCompile Include="vector_3.cpp" />
+    <ClCompile Include="watchdog.cpp" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties VM.DebugTextMessages.MessageWindow="0" VM.DebugTextMessages.TraceWindow="0" VM.DebugTextMessages.SerialWindow="1" debug.local.portname="COM4" arduino.upload.port="COM4" debug.local.portspeed="115200" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
